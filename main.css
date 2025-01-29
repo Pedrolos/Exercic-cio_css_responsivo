@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    height: 70px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #3868D6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.about img {
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.text{
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 20px;
+    font-size: 13px;
+    color: #3b3b3b;
+    width: 100%;
+}
+
+.about{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 20px;
+    font-size: 13px;
+    color: #3b3b3b;
+    width: 100%;
+}
+
+.about h2{
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #3868D6;
+    border-bottom: 1px solid;
+    width: 100%;
+}
+
+.artigos {
+    max-width: 1024px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    column-gap: 2%;
+    text-align: center;
+}
+
+.title{
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #3868D6;
+    border-bottom: 1px solid;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    margin-bottom: 25px;
+}
+
+.artigos article {
+    padding: 5px;
+    box-shadow: 3px 3px 5px 3px #a2a0a0;
+    border-radius: 4px;
+}
+
+.artigos img {
+    max-width: 150px;
+}
+
+.artigos p {
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #a2a0a0;
+}
+
+.artigos button {
+    padding: 5px;
+    background-color: #3868D6;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        display: block;
+        height: auto;
+        max-width: 99%;
+    }
+
+    .about img{
+        display: block;
+        max-width: 99%;
+    }
+
+    .about{
+        display: block;
+    }
+
+    .about h2{
+        margin-left: 40px;
+    }
+
+    .artigos {
+        grid-template-columns: repeat(2, 48%);
+    }
+
+    .artigos article{
+        margin-bottom: 20px;
+    }
+
+    .title{
+        margin-left: 75px;
+    }
+
+    .nav-links ul{
+        display: block;
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+            max-width: 80%;
+            margin: 0;
+        }
+
+    .artigos {
+        grid-template-columns: repeat(2, 40%);
+    }
+
+    .about img {
+        display: block;
+        max-width: 79%;
+
+    }
+
+    .about {
+        display: block;
+
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .botao-menu {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 16px;
+    }
+
+}
